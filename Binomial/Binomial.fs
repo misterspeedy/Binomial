@@ -31,7 +31,7 @@ let CumulativeDistribution (x : int) (n : int) (p : float) =
             else
                 unscaled
         if (Done k) && (current <= EssentiallyZero) then
-            unscaled', totalUnscaledProbability
+            unscaled', totalUnscaledProbability'
         else
             Calculate (NextK k) totalUnscaledProbability' current unscaled'   
 
